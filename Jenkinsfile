@@ -1,11 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      args 'https://github.com/SNivas12345/Postgres.git'
-      image 'postgres'
-    }
-    
-  }
+  agent none
   stages {
     stage('intialize') {
       steps {
